@@ -18,11 +18,9 @@
       <header>
         <h1 class="header">Machine Learning &amp; The Dow Jones</h1>
         <p class="header">A project by Ryan Madden</p>
-
+        <p>Final Paper:</p>
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/ryanmadden/ml-dowjones/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/ryanmadden/ml-dowjones/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/ryanmadden/ml-dowjones">View On GitHub</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/ryanmadden/ml-dowjones/zipball/master">Download Paper</a></li>
         </ul>
 
         <p class="header">This project is maintained by <a class="header name" href="https://github.com/ryanmadden">ryanmadden</a></p>
@@ -38,8 +36,6 @@
 
 <h2>
 <a id="eecs-349-machine-learning---northwestern-university" class="anchor" href="#eecs-349-machine-learning---northwestern-university" aria-hidden="true"><span class="octicon octicon-link"></span></a>EECS 349: Machine Learning - Northwestern University</h2>
-
-<hr>
 
 <h3>
 <a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h3>
@@ -67,20 +63,18 @@
 <li>Previous week’s volume</li>
 <li>Days to next dividend</li>
 <li>Percent return on next dividend</li>
-<li>Result (price goes up or down)
-I tested several classifiers using Weka including ZeroR (naive classification), NNge (Nearest neighbor), FT (functional trees), and Logistic Regression. </li>
+<li>Result (price goes up or down)</li>
 </ul>
+<p>I tested several classifiers using Weka including ZeroR (naive classification), NNge (Nearest neighbor), FT (functional trees), and Logistic Regression. </p>
 
 <h3>
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h3>
 
-<p>I tested each of the above classifiers on the first quarter’s data using 10-fold cross-validation as well as testing on the second quarter’s data using the first quarter as a training set (Figure 1). Although I tested many other classifiers, few performed better than 52% on either the cross-validation or the testing on the second quarter’s data.
-IMAGE
-Very few classifiers provided any sort of reliable results. As demonstrated in Figure 1, nearest neighbor was the only algorithm that performed noticeably above 50% for both the cross-validation on the first quarter’s data (53.3%) and the testing on the second quarter’s data (54.9%). This makes some intuitive sense, since stocks with similar characteristics in a given week could be expected to behave similarly. Although ~55% correct classification on the test set may not seem like a success, it is important to remember the context of the stock market. Due to the general uncertainty that comes with stock trading, an algorithm with 55% accuracy could be used for great monetary gain.</p>
+<p>I tested each of the above classifiers on the first quarter’s data using 10-fold cross-validation as well as testing on the second quarter’s data using the first quarter as a training set (Figure 1). Although I tested many other classifiers, few performed better than 52% on either the cross-validation or the testing on the second quarter’s data.</p>
+<img src="images/graph.png" alt="Graph of results" class="graph">
+<p class="caption"><strong>Figure 1. This graph shows the performance of each classifier on the dataset</strong></p>
+<p>Very few classifiers provided any sort of reliable results. As demonstrated in Figure 1, nearest neighbor was the only algorithm that performed noticeably above 50% for both the cross-validation on the first quarter’s data (53.3%) and the testing on the second quarter’s data (54.9%). This makes some intuitive sense, since stocks with similar characteristics in a given week could be expected to behave similarly. Although ~55% correct classification on the test set may not seem like a success, it is important to remember the context of the stock market. Due to the general uncertainty that comes with stock trading, an algorithm with 55% accuracy could be used for great monetary gain.</p>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 		
